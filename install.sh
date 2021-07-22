@@ -83,7 +83,7 @@ if [ ! -d "$INSTALL_DIR" ]; then mkdir $INSTALL_DIR; fi
 pushd $INSTALL_DIR
 
 # Get LoRa gateway repo
-git clone https://github.com/Lora-net/lora_gateway.git
+git clone https://github.com/wirid-lab/lora_gateway.git
 pushd lora_gateway
 
 # Build LoRa gateway
@@ -92,7 +92,7 @@ make
 popd
 
 # Get packet forwarder repo
-git clone https://github.com/Lora-net/packet_forwarder.git
+git clone https://github.com/wirid-lab/packet_forwarder.git
 pushd packet_forwarder
 
 # Copy start.sh
